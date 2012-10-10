@@ -809,13 +809,21 @@ table {
    Author: Steve Barnett | Naga
    ========================================================================== */
 
+@import 'modular-scale';
+
 /* ==|== Links ==== */
 
 
 
 /* ==|== Typography ==== */
 
+$base-size: 14px;
+$ratio: golden_ratio();
 
+p {
+  font-size: ms(0);
+  line-height: ms(1);
+}
 
 /* ==|== Headings ==== */
 
