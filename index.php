@@ -58,14 +58,18 @@ function auto_version($file)
 <body>
 <!-- "Skip to main content," to id, and tabindex="-1" on target -->
 <!-- terrillthompson.com/blog/161 -->
-<a href="#main" id="top">Skip to main content</a>
+<a href="#main" id="top" class="visuallyhidden">Skip to main content</a>
 
   <header role="banner" id="header">
 
   </header>
+
+  <a id="jump" href="#nav">Menu</a>
+
   <div role="main" id="main" tabindex="-1">
 
   </div>
+  
   <footer role="contentinfo" id="footer">
 
   </footer>

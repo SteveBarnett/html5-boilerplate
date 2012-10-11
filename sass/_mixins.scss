@@ -1,4 +1,4 @@
-@mixin link-colours($link, $visited: darken($linkcolorhover, 10), $hover: darken($linkcolor, 10), $focus: darken($linkcolorvisited, 10)) {
+@mixin link-colours($link, $visited: darken($link, 20), $hover: lighten($link, 20), $focus: lighten($link, 20)) {
 	&:link {
 		color: $link;
 	}
