@@ -16,6 +16,23 @@
 	}
 }
 
+@mixin link-background-colours($link, $visited: darken($link, 20), $hover: lighten($link, 20), $focus: lighten($link, 20)) {
+	&:link {
+		background-color: $link;
+	}
+	&:visited {
+		background-color: $visited;
+	}
+	&:hover {
+		background-color: $hover;
+	}
+	&:focus {
+		background-color: $focus;
+	}
+	&:active {
+		background-color: $hover;
+	}
+}
 
 // sassed clearless bits
 
