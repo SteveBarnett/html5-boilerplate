@@ -70,6 +70,9 @@ function auto_version($file)
 
   </footer>
 
+  <nav role="navigation" id="nav">
+
+  </nav>
 
   <!-- JavaScript at the bottom for fast page loading -->
 
