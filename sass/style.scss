@@ -816,6 +816,13 @@ table {
 // @import "susy";
 
 
+// http://timkadlec.com/2012/10/ie10-snap-mode-and-responsive-design/
+
+@-ms-viewport{
+    width: device-width;
+}
+
+
 html {
 -webkit-overflow-scrolling : touch;
 -webkit-tap-highlight-color : lighten($primaryColor, 75%);
