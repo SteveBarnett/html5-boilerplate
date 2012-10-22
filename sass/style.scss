@@ -812,8 +812,7 @@ table {
 @import "compass";
 @import "variables";
 @import "mixins";
-// @import "modular-scale";
-// @import "susy";
+@import "susy";
 
 
 // http://timkadlec.com/2012/10/ie10-snap-mode-and-responsive-design/
@@ -831,18 +830,21 @@ html {
 
 /* ==|== Links ==== */
 
-
+:not(a):focus {
+   outline: none; 
+}
 
 /* ==|== Typography ==== */
 
-$base-size: 14px;
-$ratio: golden_ratio();
-
 p {
-  font-size: ms(0);
-  line-height: ms(1);
-}
+   margin-bottom:0 }
+p + p {
+   text-indent:1em;
+   margin-top:0 }
 
+blockquote {
+    margin: 1.5em;
+}
 
 /* ==|== Headings ==== */
 
@@ -853,42 +855,31 @@ font-weight : $baseheadingfontweight;
 color : $baseheadingfontcolor;
 text-rendering : optimizelegibility; }
 
-h1 small,
-h2 small {
-font-weight : normal;
-color : $lightgrey; }
-
-h1,
-.h1 {
+h1 {
 margin-bottom : $baselineheight / 2;
 @include font-size(32);
 line-height : 1.2; }
 
-h2,
-.h2 {
+h2 {
 margin-bottom : $baselineheight / 2;
 @include font-size(24);
 line-height : 1.2; }
 
-h3,
-.h3 {
+h3 {
 margin-bottom : $baselineheight / 1.5;
 @include font-size(21);
 line-height : 1.3; }
 
-h4,
-.h4 {
+h4 {
 margin-bottom : $baselineheight;
 @include font-size(18);
 line-height : 1.25; }
 
-h5,
-.h5 {
+h5 {
 @include font-size(16);
 margin-bottom : $baselineheight; }
 
-h6,
-.h6 {
+h6 {
 margin-bottom : $baselineheight;
 @include font-size(14);
 font-weight : normal;

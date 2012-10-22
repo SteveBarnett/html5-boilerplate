@@ -68,15 +68,29 @@ function auto_version($file)
 
   <div role="main" id="main" tabindex="-1">
 
+  <h1>Level one heading</h1>
+  <h2>Level two heading</h2>
+  <h3>Level three heading</h3>
+  <h4>Level four heading</h4>
+  <h5>Level five heading</h5>
+  <h6>Level six heading</h6>
+
+  <p>This is a paragraph of text. Some of the text may be <em>emphasised</em> and some it might even be <strong>strongly emphasised</strong>. Occasionally <q>quoted text</q> may be found within a paragraph &hellip;and of course <a href="#">a link</a> may appear at any point in the text. The average paragraph contains five or six sentences although some may contain as little or one or two while others carry on for anything up to ten sentences and beyond.</p>
+
+  <blockquote>
+  <p>This text is quoted. A block of quoted text like this is particularly useful when pre sented as a pull-quote within an article of text.</p>
+  </blockquote>
+
   </div>
   
   <footer role="contentinfo" id="footer">
-
+    <nav role="navigation" id="nav">
+      <ul>
+        <li><a href="#">Navigation item link</a></li>
+        <li class="active"><a href="#">Active navigation item link</a></li>
+      </ul>
+    </nav>    
   </footer>
-
-  <nav role="navigation" id="nav">
-
-  </nav>
 
   <!-- JavaScript at the bottom for fast page loading -->
 
