@@ -92,6 +92,23 @@
 
 // 320 and up
 
-@mixin font-size($font-size: 16){
+@mixin font-size($font-size: 16) {
 font-size : #{$font-size}px;
-font-size : #{$font-size / 10}rem; }
+font-size : #{$font-size / 10}rem;
+}
+
+// https://github.com/fffunction/sassaparilla/blob/master/assets/css/libs/_typography.scss
+
+$public_path: "./";
+
+@mixin vector-bg-with-fallback($name) {
+  background-image: url('#{$public_path}images/#{$name}.png');
+  background-image: none, url('#{$public_path}images/#{$name}.svg');
+}
+
+// https://github.com/malarkey/320andup/blob/master/scss-compass/_typography.scss
+
+@mixin font-size($font-size: 16) {
+font-size : #{$font-size}px;
+font-size : #{$font-size / 10}rem;
+}

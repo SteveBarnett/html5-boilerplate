@@ -1,37 +1,35 @@
 /* Variables */
 
-$black 			: rgb(0,0,0);
-$darkgrey 		: lighten($black, 25%);
-$grey 			: lighten($black, 50%);
-$lightgrey 		: lighten($black, 75%);
-$lightergrey 	: lighten($black, 90%);
-$white 			: rgb(255,255,255);
+$black: rgb(0,0,0);
+$darkgrey: lighten($black, 25%);
+$grey: lighten($black, 50%);
+$lightgrey: lighten($black, 75%);
+$lightergrey: lighten($black, 90%);
+$white: rgb(255,255,255);
 
-$bodycolor : $white;
-$textcolor : $black;
+$bodycolor: $white;
+$textcolor: $black;
 
 /* Typography */
 
-$basefont : "Helvetica Neue", Helvetica, Arial, sans-serif;
-$basefontsize : 16;
-$baselineheight : 1.5em;
-$baseheadingfont : inherit;
-$baseheadingfontweight : bold;
-$baseheadingfontcolor : inherit;
+$basefont: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$basefontsize: 16;
+$baselineheight: 1.5em;
+$baseheadingfont: inherit;
+$baseheadingfontweight: bold;
+$baseheadingfontcolor: inherit;
 
-$altfont : Cambria, Georgia, Times, "Times New Roman";
-$altlineheight : 1.35em;
+$altfont: Cambria, Georgia, Times, "Times New Roman";
+$altlineheight: 1.35em;
 
-$codefont : Monaco, Courier New, monospace;
+$codefont: Monaco, Courier New, monospace;
 
 /* Colour */
 
-$primaryColor: #000;
-$secondaryColor: #fff;
+$primaryColor:#000;
+$secondaryColor:#fff;
 // $tertiaryColor: #;
 $bordercolor: lighten($primaryColor, 60%);
-
-
 
 
 
