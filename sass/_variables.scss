@@ -1,4 +1,4 @@
-/* Variables */
+// Variables
 
 $black: rgb(0,0,0);
 $darkgrey: lighten($black, 25%);
@@ -10,7 +10,7 @@ $white: rgb(255,255,255);
 $bodycolor: $white;
 $textcolor: $black;
 
-/* Typography */
+// Typography
 
 $basefont: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $basefontsize: 16;
@@ -24,13 +24,20 @@ $altlineheight: 1.35em;
 
 $codefont: Monaco, Courier New, monospace;
 
-/* Colour */
+// Colour
 
 $primaryColor:#000;
 $secondaryColor:#fff;
 // $tertiaryColor: #;
-$bordercolor: lighten($primaryColor, 60%);
+// $bordercolor: lighten($primaryColor, 60%);
+$basecolor: $primaryColor;
 
+// Links
+
+$linkcolor: rgb(1,53,104);
+$linkcolorhover: darken($linkcolor, 10);
+$linkcolorvisited: darken($linkcolorhover, 10);
+$linkcolorfocus  : darken($linkcolorvisited, 10);
 
 
 $breakpointL: '60em';
