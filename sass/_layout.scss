@@ -1,3 +1,5 @@
 // Divide the page into sections. Layouts hold one or more modules together.
 // Use .l- prefix.
 // Set grid here
+
+// Use @include respond-min(60em) { ... } to bracket responsive elements

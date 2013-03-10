@@ -285,15 +285,15 @@ textarea {
 }
 
 
-@import "normalize";
-
 /* ==|== primary styles =====================================================
    Author: Steve Barnett | Naga
    ========================================================================== */
 
+@import "normalize";
 @import "compass";
-@import "variables";
 @import "mixins";
+@import "variables";
+@import "base";
 
 // http://timkadlec.com/2012/10/ie10-snap-mode-and-responsive-design/
 
@@ -318,26 +318,20 @@ textarea {
 }
 
 html {
--webkit-overflow-scrolling : touch;
--webkit-tap-highlight-color : lighten($primaryColor, 75%);
+  -webkit-overflow-scrolling : touch;
+  -webkit-tap-highlight-color : lighten($primaryColor, 75%);
 }
 
 
 /* ==|== Links ==== */
 
 :not(a):focus {
-   outline: none;
+  outline: none;
 }
 
 /* ==|== Figures ==== */
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
-
-
-
-
-
-
