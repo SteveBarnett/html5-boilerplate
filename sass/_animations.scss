@@ -1,0 +1,11 @@
+/* http://www.html5rocks.com/en/tutorials/speed/high-performance-animations/ */
+
+/*
+Modern browsers can animate four things really cheaply:
+opacity;
+translate;
+rotate;
+scale.
+
+use translate3d() to trigger hardware acceleration
+*/
