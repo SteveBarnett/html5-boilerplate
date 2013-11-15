@@ -93,16 +93,54 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* ==|== primary styles =====================================================
+   Author: Steve Barnett | Naga
+   ========================================================================== */
+
+@import "animations";
+@import "base";
+@import "buttons";
+@import "icons";
+@import "layout";
+@import "modules";
+@import "navigation";
+@import "state";
+@import "typography";
+@import "variables";
+
+// http://timkadlec.com/2012/10/ie10-snap-mode-and-responsive-design/
+
+@-webkit-viewport {
+  width : device-width;
+}
+
+@-moz-viewport {
+  width : device-width;
+}
+
+@-ms-viewport {
+  width : device-width;
+}
+
+@-o-viewport {
+  width : device-width;
+}
+
+@viewport {
+  width : device-width;
+}
+
+html {
+  -webkit-overflow-scrolling : touch;
+  -webkit-tap-highlight-color : lighten($primaryColor, 75%);
+}
 
 
+/* ==|== Links ==== */
 
-
-
-
-
-
-
-
+:not(a):focus {
+  outline: none;
+}
 
 
 
@@ -282,56 +320,4 @@ textarea {
     h3 {
         page-break-after: avoid;
     }
-}
-
-
-/* ==|== primary styles =====================================================
-   Author: Steve Barnett | Naga
-   ========================================================================== */
-
-@import "normalize";
-@import "compass";
-@import "mixins";
-@import "variables";
-@import "base";
-
-// http://timkadlec.com/2012/10/ie10-snap-mode-and-responsive-design/
-
-@-webkit-viewport {
-  width : device-width;
-}
-
-@-moz-viewport {
-  width : device-width;
-}
-
-@-ms-viewport {
-  width : device-width;
-}
-
-@-o-viewport {
-  width : device-width;
-}
-
-@viewport {
-  width : device-width;
-}
-
-html {
-  -webkit-overflow-scrolling : touch;
-  -webkit-tap-highlight-color : lighten($primaryColor, 75%);
-}
-
-
-/* ==|== Links ==== */
-
-:not(a):focus {
-  outline: none;
-}
-
-/* ==|== Figures ==== */
-
-img {
-  max-width: 100%;
-  height: auto;
 }
