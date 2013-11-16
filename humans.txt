@@ -3,11 +3,7 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
-
-# THANKS
-
-    <name>
+    Steve Barnett -- @maxbarners
 
 # TECHNOLOGY COLOPHON
 
