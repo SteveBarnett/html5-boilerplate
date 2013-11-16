@@ -15,5 +15,5 @@ var modernBrowser = function () {
 function logPerceivedLoadTime() {
   var now = new Date().getTime();
   var page_load_time = now - performance.timing.navigationStart;
-  console.log("User-perceived page loading time: " + page_load_time);
+  console.log('User-perceived page loading time: ' + page_load_time);
 }
