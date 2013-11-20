@@ -17,3 +17,11 @@ function logPerceivedLoadTime() {
   var page_load_time = now - performance.timing.navigationStart;
   console.log('User-perceived page loading time: ' + page_load_time);
 }
+
+// navigator.geolocation
+
+// navigator.battery
+
+// Page visibility: document.hidden
+
+// Offline? http://github.hubspot.com/offline/
