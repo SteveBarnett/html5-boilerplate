@@ -54,6 +54,16 @@
         p q r s t u v w x y z { | } ~
         </pre>
 
+        <span data-picture data-alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia">
+            <span data-src="img/small.jpg"></span>
+            <span data-src="img/medium.jpg" data-media="(min-width: 400px)"></span>
+            <span data-src="img/large.jpg" data-media="(min-width: 800px)"></span>
+            <span data-src="img/extralarge.jpg" data-media="(min-width: 1000px)"></span>
+
+            <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+            <noscript><img src="img/small.jpg" alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia"></noscript>
+        </span>
+
       </main>
 
       <footer role="contentinfo" id="footer">
@@ -67,6 +77,8 @@
 
 
         <script src="js/main.js"></script>
+        <script src="js/picturefill.js"></script>
+        <script src="js/matchmedia.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
