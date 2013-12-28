@@ -18,6 +18,14 @@ function logPerceivedLoadTime() {
   console.log('User-perceived page loading time: ' + page_load_time);
 }
 
+// Do a localised jsperf
+
+var jsPerfStart = performance.now();
+// code for testing
+var jsPerfEnd = performance.now();
+var jsPerfTime = jsPerfEnd - jsPerfStart;
+
+
 // navigator.geolocation
 
 // navigator.battery
