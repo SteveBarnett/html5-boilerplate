@@ -33,3 +33,7 @@ var jsPerfTime = jsPerfEnd - jsPerfStart;
 // Page visibility: document.hidden
 
 // Offline? http://github.hubspot.com/offline/
+
+document.addEventListener('DOMContentLoaded', function() {
+  ragadjust('p, li, dd', 'all'); 
+});
