@@ -9,7 +9,9 @@
 
         <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
 
-        <!-- TODO: Serve basic style.css to everything, enhanced.css to larger screens and IE. Keep html.*ie* for element fixes. -->
+        <!-- Small bit of CSS here, rest in external?  -->
+        <!-- https://developers.google.com/speed/docs/insights/OptimizeCSSDelivery -->
+
         <link rel="stylesheet" href="stylesheets/style.css" media="screen, handheld"/>
         <!--[if (lt IE 9)&(!IEMobile)]><link rel="stylesheet" href="stylesheets/ie.css" /> <![endif]-->
         <!-- <link rel="dns-prefetch" href="//example.com" /> -->
@@ -20,7 +22,7 @@
         <script type="text/javascript">
         function downloadJSAtOnload() {
         var element = document.createElement("script");
-        element.src = "main.min.js";
+        element.src = "js/main.min.js";
         document.body.appendChild(element);
         }
         if (window.addEventListener)
