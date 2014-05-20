@@ -19,7 +19,8 @@
         <!--[if (lt IE 9)&(!IEMobile)]><link rel="stylesheet" href="stylesheets/ie.css" /> <![endif]-->
         <!-- <link rel="dns-prefetch" href="//example.com" /> -->
 
-        <!--<script src="js/modernizr.custom.min.js"></script> -->
+        <script src="js/modernizr.custom.min.js"></script>
+        <script src="picturefill.js" async></script>
 
         <!-- Combine js files and grab here -->
         <script type="text/javascript">
@@ -64,7 +65,8 @@
         </code>
 
         <p>pre-formatted text</p>
-            <pre>
+
+        <pre>
         ! " # $ % &amp; ' ( ) * + , - . /
         0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ?
         @ A B C D E F G H I J K L M N O
@@ -73,15 +75,15 @@
         p q r s t u v w x y z { | } ~
         </pre>
 
-        <span data-picture data-alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia">
-            <span data-src="img/small.jpg"></span>
-            <span data-src="img/medium.jpg" data-media="(min-width: 400px)"></span>
-            <span data-src="img/large.jpg" data-media="(min-width: 800px)"></span>
-            <span data-src="img/extralarge.jpg" data-media="(min-width: 1000px)"></span>
-
-            <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
-            <noscript><img src="img/small.jpg" alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia"></noscript>
-        </span>
+        <!-- https://github.com/scottjehl/picturefill -->
+        <picture>
+            <!--[if IE 9]><video style="display: none;"><![endif]-->
+            <source srcset="img/large.webp" media="(min-width: 800px)" type="image/webp">
+            <source srcset="img/large.jpg" media="(min-width: 800px)">
+            <source srcset="img/medium.jpg" media="(min-width: 400px)">
+            <!--[if IE 9]></video><![endif]-->
+            <img srcset="img/small.jpg" alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia">
+        </picture>
 
       </main>
 
@@ -96,8 +98,7 @@
       </footer>
 
     <script src="js/main.js"></script>
-    <script src="js/picturefill.js"></script>
-    <script src="js/matchmedia.js"></script>
+    <script src="js/picturefill.min.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <!--
