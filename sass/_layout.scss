@@ -31,6 +31,20 @@
   white-space: nowrap;
 }
 
+// clearing
+
+ .l-cb {
+  clear: both;
+}
+
+.l-cl {
+  clear: left;
+}
+
+.l-cr {
+  clear: right;
+}
+
 // positioning
 
 .l-pa {
