@@ -10,12 +10,69 @@
   padding: 0;
 }
 
-.no-mp {
+.no-m {
   margin: 0;
-  padding: 0;
 }
 
-.no-mp-centered {
-  margin: 0 auto;
-  padding: 0;
+.no-bull {
+  list-style-type: none;
+}
+
+.l-db {
+ display: block;
+}
+
+.l-ib {
+  display: inline-block;
+
+}
+
+.l-wsno {
+  white-space: nowrap;
+}
+
+// positioning
+
+.l-pa {
+  position: absolute;
+}
+
+.l-pr {
+  position: relative;
+}
+
+// positioning
+
+.l-t {
+  top: 0;
+}
+
+.l-r {
+  right: 0;
+}
+
+.l-b {
+  bottom: 0;
+}
+
+.l-l {
+  left: 0;
+}
+
+// positioning - indented
+
+.l-t-indent {
+  top: 1em;
+}
+
+.l-r-indent {
+  right: 1em;
+}
+
+.l-b-indent {
+  bottom: 1em;
+}
+
+.l-l-indent {
+  left: 1em;
 }
