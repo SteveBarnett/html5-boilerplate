@@ -12,6 +12,9 @@
         <link rel="shortcut icon" href="touch-icon.png">
         <link rel="apple-touch-icon-precomposed" href="touch-icon.png">
 
+        <!-- Place any (small!) inline JS here, above the CSS. -->
+        <!-- https://www.igvita.com/2014/05/20/script-injected-async-scripts-considered-harmful/ -->
+
         <!-- Small bit of CSS here, rest in external?  -->
         <!-- https://developers.google.com/speed/docs/insights/OptimizeCSSDelivery -->
 
@@ -20,21 +23,7 @@
         <!-- <link rel="dns-prefetch" href="//example.com" /> -->
 
         <script src="js/modernizr.custom.min.js"></script>
-        <script src="picturefill.js" async></script>
-
-        <!-- Combine js files and grab here -->
-        <script type="text/javascript">
-        function downloadJSAtOnload() {
-        var element = document.createElement("script");
-        element.src = "js/main.min.js";
-        document.body.appendChild(element);
-        }
-        if (window.addEventListener)
-        window.addEventListener("load", downloadJSAtOnload, false);
-        else if (window.attachEvent)
-        window.attachEvent("onload", downloadJSAtOnload);
-        else window.onload = downloadJSAtOnload;
-        </script>
+        <!-- If small, include inline instead? -->
     </head>
     <body>
       <a href="#main" id="top" class="visuallyhidden">Skip to main content</a>
@@ -97,8 +86,8 @@
         </nav>
       </footer>
 
-    <script src="js/main.js"></script>
-    <script src="js/picturefill.min.js"></script>
+    <script src="js/main.min.js" async></script>
+    <!-- Includes all scripts in js, except modernizr -->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <!--
