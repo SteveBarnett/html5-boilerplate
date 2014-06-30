@@ -84,3 +84,11 @@ blockquote {
 .no-bull {
   list-style: none;
 }
+
+// show IDs for content
+
+main [id]:hover::after {
+  display: inline;
+  content: ' #' attr(id);
+  color: lighten($black, 30%);
+}
