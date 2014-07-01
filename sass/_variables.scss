@@ -16,23 +16,12 @@ $font-family-monospace: Monaco, Menlo, Consolas, "Courier New", monospace;
 
 $primaryColor:#000;
 $secondaryColor:#fff;
-$basecolor: $primaryColor;
 
 // Links
 
 $linkcolor: rgb(1,53,104);
 $linkcolorhover: darken($linkcolor, 10);
 $linkcolorvisited: darken($linkcolorhover, 10);
-$linkcolorfocus  : darken($linkcolorvisited, 10);
-
-// sizes
-
-$xs: 0.25em;
-$s: 0.5em;
-$m: 1em;
-$l: 1.5em;
-$xl: 2em;
-$xxl: 4em;
 
 // Branding
 
