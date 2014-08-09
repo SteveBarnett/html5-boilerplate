@@ -132,3 +132,16 @@
 .l-fn {
   float: none;
 }
+
+// susy
+
+$susy: (
+  columns: 12,
+  gutters: 1/4,
+  math: fluid,
+  output: float,
+  gutter-position: inside,
+);
+
+// Usage:
+// @include span(8); // 8 of 12 columns

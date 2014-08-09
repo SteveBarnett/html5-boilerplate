@@ -2,6 +2,7 @@
 
 $black: #333;
 $white: #fff;
+$grey: #999;
 
 $bodycolor: $white;
 $textcolor: $black;
@@ -22,6 +23,7 @@ $secondaryColor:#fff;
 $linkcolor: rgb(1,53,104);
 $linkcolorhover: darken($linkcolor, 10);
 $linkcolorvisited: darken($linkcolorhover, 10);
+$linkcolorfocus: $linkcolorhover;
 
 // Branding
 
