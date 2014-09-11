@@ -7,5 +7,7 @@ translate;
 rotate;
 scale.
 
-use translate3d() to trigger hardware acceleration
+use translate3d / translateZ to trigger hardware acceleration,
+promote a bit to **its own layer**.
+
 */
